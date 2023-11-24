@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 170vh;
+    align-items: center;
+    background-color: rgb(8, 109, 109);
+}
+
+.menus {
+    display: block;
+    justify-content: center;
+    width: 60vw;
+    background-color: rgb(32, 155, 155);
+    -webkit-box-shadow: 0px 1px 11px 3px rgba(46,41,46,1);
+    -moz-box-shadow: 0px 1px 11px 3px rgba(46,41,46,1);
+    box-shadow: 0px 1px 11px 3px rgba(46,41,46,1);
+}
+
+
+.menu-tag {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid black;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 13.9vh;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.menu-tag:active {
+    background-color: rgb(8, 109, 109);
+    
+}
+.status-sign {
+    font-size: 30px;
+    font-family: cursive;
+}
+.all-contents {
+    background-color: white;
+    padding-left: 3%;
+    padding-right: 5%;
+    font-family: monospace;
+    font-size: 16px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+@keyframes expand {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 500px;
+    }
+}
+
+.all-contents.expanding {
+    animation: expand 0.3s ease-out;
+    max-height: 500px;
+}
